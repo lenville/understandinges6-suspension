@@ -1,108 +1,109 @@
-# Understanding ECMAScript 6
+# 理解 ECMAScript 6
 
 by Nicholas C. Zakas
 
 ![Creative Commons License](http://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png)
 
-ECMAScript 6 represents the biggest change to the core of JavaScript in the history of the language. Not only does the sixth edition add new object types, but also new syntax and exciting new capabilities. The result of years of study and debate, ECMAScript 6 reached feature complete status in 2014. While it will take a bit of time before all JavaScript environments support ECMAScript 6, it's still useful to understand what's coming and which features are available already.
+ECMAScript 6 是 JavaScript 这门语言有史以来核心变动最大的一个版本，第六版不仅增加新的对象类型，还增加了新的语法和令人激动的新能力。经过数年的研究和讨论，ECMAScript 6 于 2014 年不再增加新特性。所有的 JavaScript 环境都需要点儿时间来支持 ECMAScript 6，在这之前，提前了解一下即将实现的和已经实现的新特性会很有帮助。
 
-This book is a guide for the transition between ECMAScript 5 and 6. It is not specific to any JavaScript environment, so it is equally useful to web developers as it is Node.js developers.
+这本书是由 ECMAScript 5 到 6 过渡的一个指南，并不针对任何一个 JavaScript 环境，所以无论对于 Web 开发者还是 Node.js 开发这来说它都同样地实用。
 
-What you'll learn:
+你将会学到的知识有：
 
-* All of the changes to the language since ECMAScript 5
-* How the new class syntax relates to more familiar JavaScript concepts
-* Why iterators and generators are useful
-* How arrow functions differ from regular functions
-* Additional options for storing data using sets, maps, and more
-* The power of inheriting from native types
-* Why people are so excited about promises for asynchronous programming
-* How modules will change the way you organize code
+* 自 ECMAScript 5 以来语言的所有改变
+* 如何将新加入的 class 语法与更熟悉的 JavaScript 概念联系起来
+* 为什么 iterators 和 generators 很实用
+* 存储数据有更多额外的选择：sets、maps还有其它的一些概念
+* 继承自原生类型的巨大威力
+* 为什么人们对于使用 promises 进行异步编程感到非常激动
+* modules 如何改变你组织代码的方式
 
-## Where to Read
+## 可以去哪里学习这些知识
 
-The [published version](https://leanpub.com/understandinges6/read/) is available for free and contains the latest "blessed" version. The content may be incomplete but should be correct. New releases are published several times a month.
+公开发布的版本（[英文版](https://leanpub.com/understandinges6)｜[中文版-尚未发布](https://leanpub.com/understandinges6-cn/read/)）包含最新的经过校对的内容，你可以免费阅读。内容可能不完整但绝对是正确的，新版本一个月会发布几次。
 
-Anything that is not present in the published version is considered a work-in-progress and may be incomplete or incorrect.
+公开发布的版本中未提及的任何事情都被认为是半成品，它们可能尚不完整或者不正确。
 
-## Purchasing a copy
+## 购买一份拷贝
 
-You can purchase a copy of this ebook through [Leanpub](https://leanpub.com/understandinges6).
+你可以通过这个链接（[英文版](https://leanpub.com/understandinges6)｜[中文版－尚未发布](https://leanpub.com/understandinges6)）购买一份电子书的拷贝
 
-## Contributions
+## 贡献
 
-Even though this book is being developed in the open, the project works differently than open source software projects. Please read the following thoroughly before attempting to contribute.
+即使这本书被开源撰写，但这个项目与开源软件项目的工作方式不太相同，在参与贡献前请仔细阅读下面的内容。
 
 ### Leanpub Markdown
 
-Leanpub uses a specific flavor of Markdown for its source files. Please be sure to read [their documentation](https://leanpub.com/help/manual#leanpub-auto-styling-text) about what is allowable and what is not.
+Leanpub 使用一个特定格式的Markdown作为它的源文件。请仔细阅读[他们的文档](https://leanpub.com/help/manual#leanpub-auto-styling-text)，你将会了解你可以使用的和你不能使用的标记。
 
-**Note:** It may be frustrating, but Leanpub does not support GitHub-flavored Markdown.
+**注意：**阅读的过程很枯燥，但 Leanpub 真的不支持 Github 的 Markdown 格式。
 
 ### Pull requests
 
-Pull requests will be accepted only for *correction of content* and not for *creation of content*. Acceptable pull requests:
+只有 *更正内容* 的 Pull requests 会被接受，*提供原创内容* 的不会被接受。
+可接受的 pull requests：
 
-* Typo fixes
-* Grammar/spelling errors
-* Alternate descriptions
-* Clarifying phrases
+* 排版错误
+* 语法/拼写错误
+* 不同的描述
+* 习语说明
 
-Pull requests that will not be considered:
+不被接受的 Pull requests
 
-* New sections of content
-* New chapters
+* 新增的内容
+* 新的章节
 
-Basically, you can use pull requests to fix what is already in the repository but not to add what is not in the repository.
+基本上，你可以用 pull requests 来修改 repo 中已有的内容，但是不能添加 repo 中没有的内容。
 
-**Note:** An accepted pull request means that your name will be added to a list of contributors. You are still bound by the conditions of the license, meaning that you are not considered an author or owner of the content once it has been merged in. It is considered a donation of your effort to this work.
+**注意：**一个可接受的 pull request 意味着你的名字会被加入到贡献者列表中，你仍然会受到license的约束，只要提交的内容被合并，你将失去对这段内容的所有权，你所做的工作将视为对这个项目的捐赠行为。
 
 ### Issues
 
-Issues can be used both to point out errors as well as to make suggestions. Use issues for:
+Issues 可以被用来指出错误，也可以用来提建议。
+issues可以被用来：
 
-* Asking questions about the content
-* Pointing out an error or problem with the content
-* Requesting more information about a section
-* Suggesting a new topic for inclusion
+* 询问有关文章的问题
+* 指出文章的错误或问题
+* 要求为小节增添更多的内容
+* 推荐新的主题
 
-Any issue that remains open will be addressed. Issues will be closed either when addressed or if the issue will not be addressed.
+所有打开的 issue 会得到妥善处理，当 issue 处理完毕或不再处理时会关闭它。
 
-Issues should not be used for:
+Issues 不应该被用来：
 
-* Asking when a particular section or chapter will be complete
-* Anything already marked as "TODO" in the files
+* 询问具体的小节或章节何时完成
+* 提及 “TODO” 列表中已有的计划
 
-These types of issues will simply be marked as invalid and closed without comment.
+这种类型的 issues 将会被简单地标记为 invalid 并关闭，你将不会得到任何解释。
 
-## Copyright and License
+## 版权和许可
 
 Copyright 2014 Nicholas C. Zakas.
 
-This work is licensed under a [Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License](http://creativecommons.org/licenses/by-nc-nd/3.0/).
+这个项目遵循 [Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License](http://creativecommons.org/licenses/by-nc-nd/3.0/) 协议。
 
-## Frequently Asked Questions
+## 经常被提到的问题
 
-### When will the book be finished?
+### 这本书何时完成？
 
-To be determined. Since I'm writing this in my spare time, it's hard to predict when it will be complete. The goal is to have it complete by December 2014, but that is a goal and not a deadline.
+时间待定。我利用空闲时间写作这本书，很难预测何时完成，目前打算在 2014 年 12 月之前完成，但这不是最终的截止日期。
 
-### If I buy a copy now, do I get the finished one?
+### 如果我现在购买一份拷贝，那么我可以获取最终版么？
 
-Yes. When you buy a copy today, you will automatically get all updates for the book. You'll be notified of updated versions via email after purchase.
+是的，你现在购买一份拷贝，你将自动获得这本书的所有更新，购买后你会定期收到邮件通知你有新版本发布。
 
-### How often is the book published?
+### 这本书多久发布一次？
 
-Roughly every week or two the changes in GitHub are published to Leanpub.
+差不多每周或每两周会将 Github 上的更新发布到 Leanpub。
 
-### What is the state of content in GitHub?
+### Github 上的内容处于什么状态？
 
-Everything in GitHub is a work in progress. Those parts that are known to be correct and fully-formed enough to be valuable are published to Leanpub. That's why there's more content in GitHub than is available on Leanpub, as GitHub contains everything, including content that's not quite ready for the book.
+Github 上的所有内容都是半成品，完全正确且足够完整的那部分内容会被发布在 Leanpub。这就是为何 Github 里的文章会比 Leanpub 上能看到的多，因为 Github 上包括了所有的内容，其中就有那些不适合作为书本发布的文章。
 
-### Will there be a print version of the book?
+### 这本书会有印刷版么？
 
-In all likelihood yes. I've already been contacted by a couple of publishers, but there will be no final decision made until the content of the book is complete. This is intentional on my part because publishers have deadlines, and I'm unable to estimate when I'll have the book finished.
+答案十分可能是是的。我已经联系了几个出版商，但是在本书最终完成前不会做最后的决定。我有意为之，因为出版商总会限定一个截止日期，如果匆忙赶时间就无法激发出我的灵感。
 
-### Can I acquire translation rights?
+### 我可以寻求翻译权么？
 
-Not at this time. I will likely leave that to the publisher of the print book.
+现在还不行，我将会把相关工作移交给我的出版商。
