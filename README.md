@@ -1,6 +1,6 @@
 # 理解 ECMAScript 6
 
-by Nicholas C. Zakas
+[by Nicholas C. Zakas](https://github.com/nzakas/understandinges6)
 
 ![Creative Commons License](http://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png)
 
