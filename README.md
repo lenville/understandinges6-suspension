@@ -1,3 +1,9 @@
+2015年8月26日 更新
+
+与出版社合作翻译，项目一直处于暂停状态，望谅解
+
+---
+
 # 理解 ECMAScript 6
 
 [by Nicholas C. Zakas](https://github.com/nzakas/understandinges6)
