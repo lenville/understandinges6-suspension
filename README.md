@@ -1,3 +1,11 @@
+2017年10月26日 更新
+
+新书7月已出版，可以通过 https://book.douban.com/subject/27072230/ 获取详细信息
+
+亦可至 [亚马逊](https://www.amazon.cn/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3ES6-Nicholas-C-Zakas/dp/B071GW3JDP) / [京东](https://item.jd.com/12213616.html) / [当当](http://product.dangdang.com/25098207.html) / [China-Pub](http://product.china-pub.com/6011498) / [中国图书网](http://www.bookschina.com/7532154.htm) 直接购买
+
+---
+
 2015年8月26日 更新
 
 与出版社合作翻译，项目一直处于暂停状态，望谅解
